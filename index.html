@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Patterns with Flexbox</title>
-
         <style>
 
 
@@ -18,7 +17,6 @@
                 font-size: 30px;
                 color: white;
             }
-
 
             .threegridcontainer {
                 display: flex;
@@ -44,7 +42,7 @@
 
 
             .logs {
-                background-color: rgb(91, 53, 163);
+                background-color: rgb(53, 163, 101);
                 width: 30%;
                 height: 150px;
             }
@@ -54,16 +52,16 @@
 
             .stretch-container {
                 display: flex;
-                flex-wrap: wrap;
-                flex-direction: column;
+                flex-direction: row;
                 gap: 0.5em;
+                height: 400px;
+                align-content: stretch;
             }
 
 
             .stretches {
-                background-color: rgb(0, 0, 0);
+                background-color: rgb(203, 42, 42);
                 width: 30%;
-                height: 150px;
             }
 
 
@@ -108,15 +106,11 @@
                          <!-- Stretch all -->
 
             <div class="stretch-container containers">
-                <div class="stratches">1</div>
-                <div class="stratches">2</div>
-                <div class="stratches">3</div>
-                <div class="stratches">4</div>
-                <div class="stratches">5</div>
-
-
-         </div>
-
+                <div class="stretches">1</div>
+                <div class="stretches">2</div>
+                <div class="stretches">3</div>
+                <div class="stretches">4</div>
+            </div>
 
         </div>
     </body>
