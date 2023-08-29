@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Patterns with Flexbox</title>
+        <style>
+
+
+                /* 3x3 grid */
+
+            .containers {
+                margin: 50px;
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                font-size: 30px;
+                color: white;
+            }
+
+            .threegridcontainer {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 0.5em;
+            }
+
+            .blocks {
+                background-color: rgb(91, 53, 163);
+                width: 30%;
+                height: 150px;
+            }
+
+               /* vertical stack */
+
+            .logcontainer {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: 0.5em;
+            }
+
+
+            .logs {
+                background-color: rgb(53, 163, 101);
+                width: 30%;
+                height: 150px;
+            }
+
+
+                         /* Stretch all */
+
+            .stretch-container {
+                display: flex;
+                flex-direction: row;
+                gap: 0.5em;
+                height: 400px;
+                align-content: stretch;
+            }
+
+
+            .stretches {
+                background-color: rgb(206, 198, 51);
+                width: 30%;
+            }
+
+
+                         /* Vertical bars */
+
+            .vertical-container {
+                display: flex;
+                flex-direction: row;
+                align-items:end;
+                gap: 0.5em;
+            }
+
+
+            .verticals {
+                background-color: rgb(203, 42, 42);
+                width: 30%;
+            }
+
+            .vertical1 {
+                height: 300px;
+            }
+
+
+            .vertical2 {
+                height: 400px;
+            }
+
+            .vertical3 {
+                height: 500px;
+            }
+
+            .vertical4 {
+                height: 100px;
+            }
+
+            .vertical5 {
+                height: 200px;
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+
+        <div class="allmighty-container">
+        <!-- 3x3 grid-->
+
+            <div class=" threegridcontainer containers">
+
+                <div class="blocks">1</div>
+                <div class="blocks">2</div>
+                <div class="blocks">3</div>
+                <div class="blocks">4</div>
+                <div class="blocks">5</div>
+                <div class="blocks">6</div>
+                <div class="blocks">4</div>
+                <div class="blocks">5</div>
+                <div class="blocks">6</div>
+
+            </div>
+
+
+            <!-- vertical stack -->
+
+            <div class="logcontainer containers">
+                    <div class="logs">1</div>
+                    <div class="logs">2</div>
+                    <div class="logs">3</div>
+                    <div class="logs">4</div>
+                    <div class="logs">5</div>
+
+
+             </div>
+
+
+                         <!-- Stretch all -->
+
+            <div class="stretch-container containers">
+                <div class="stretches">1</div>
+                <div class="stretches">2</div>
+                <div class="stretches">3</div>
+                <div class="stretches">4</div>
+            </div>
+
+
+
+            <!-- Verticel bars -->
+
+            <div class="vertical-container containers">
+                <div class="verticals vertical1">1</div>
+                <div class="verticals vertical2">2</div>
+                <div class="verticals vertical3">3</div>
+                <div class="verticals vertical4">4</div>
+                <div class="verticals vertical5">5</div>
+            </div>
+
+
+
+
+
+        </div>
+    </body>
+</html>
